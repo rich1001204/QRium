@@ -19,6 +19,7 @@
 package com.czlucius.scan.ui;
 
 import android.content.Context;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 
@@ -26,6 +27,7 @@ import com.czlucius.scan.R;
 import com.czlucius.scan.databinding.ResultsPageBinding;
 import com.czlucius.scan.objects.Code;
 import com.czlucius.scan.objects.actions.Action;
+import com.czlucius.scan.objects.actions.URLAction;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.chip.Chip;
@@ -35,10 +37,23 @@ import java.text.DateFormat;
 public class ResultDisplayDialog extends BottomSheetDialog {
     private ResultsPageBinding binding;
     private Code code;
+    private boolean isUrlAction = false;
+    private Action urlAction = null;
+    private boolean urlActionExecuted = false;
 
     public ResultDisplayDialog(@NonNull Context context, Code code) {
         super(context);
         this.code = code;
+        
+        // Identify URLAction specifically from the code's data type actions
+        for (Action obj : code.getDataType().getActions()) {
+            if (obj instanceof URLAction) {
+                isUrlAction = true;
+                urlAction = obj;
+                break;
+            }
+        }
+        
         initialize();
         populateLayout();
     }
@@ -47,37 +62,44 @@ public class ResultDisplayDialog extends BottomSheetDialog {
         setCancelable(true);
         binding = ResultsPageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        
+        if (isUrlAction) {
+            // Prevent UI flash by making the dialog invisible before it shows
+            if (getWindow() != null) {
+                getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+                getWindow().setDimAmount(0f); // Remove dark overlay
+            }
+            binding.getRoot().setVisibility(View.INVISIBLE);
+        }
     }
-
 
     @Override
     protected void onStart() {
         super.onStart();
+        if (isUrlAction && !urlActionExecuted) {
+            urlActionExecuted = true;
+            if (urlAction != null && getContext() != null) {
+                urlAction.performAction(getContext(), code.getData());
+            }
+            dismiss(); // Dismiss immediately to trigger ScanningWrapper.release()
+            return;
+        }
         getBehavior().setState(BottomSheetBehavior.STATE_EXPANDED);
     }
 
     private void populateLayout() {
+        if (isUrlAction) {
+            return; // Skip layout population for URL results to prevent UI setup
+        }
+
         DateFormat dateFormat = DateFormat.getDateTimeInstance();
         binding.dateContents.setText(dateFormat.format(code.getTimeScanned()));
         binding.typeContents.setText(code.getDataType().getTypeName());
         binding.formatContents.setText(code.getFormatName(getContext()));
         binding.codeContentsText.setText(code.getData().getStringRepresentation());
 
-
         binding.actionsGroup.removeAllViews();
         Chip chip;
         for (Action obj : code.getDataType().getActions()) {
             chip = (Chip) getLayoutInflater()
                     .inflate(R.layout.template_chip, binding.actionsGroup, false);
-            if (obj.getActionIcon() != null) {
-                chip.setChipIconResource(obj.getActionIcon());
-            }
-            chip.setText(obj.getActionText());
-            chip.setOnClickListener((v) -> {
-                obj.performAction(getContext(), code.getData());
-            });
-            binding.actionsGroup.addView(chip);
-        }
-
-    }
-}
