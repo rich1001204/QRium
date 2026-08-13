@@ -27,6 +27,17 @@ jobs:
       - name: Install Android SDK packages
         run: sdkmanager "platforms;android-33" "build-tools;33.0.2"
 
+      - name: Configure CI-only Maven repository
+        run: |
+          mkdir -p "$HOME/.gradle/init.d"
+          cat > "$HOME/.gradle/init.d/qrium-ci-repositories.gradle" <<'EOF'
+          allprojects {
+              repositories {
+                  maven { url = uri("https://artifactory.appodeal.com/appodeal-public") }
+              }
+          }
+          EOF
+
       - name: Make Gradle wrapper executable
         run: chmod +x ./gradlew
 
