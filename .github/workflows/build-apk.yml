@@ -1,0 +1,44 @@
+name: Build QRium APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: gradle
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android SDK packages
+        run: sdkmanager "platforms;android-33" "build-tools;33.0.2"
+
+      - name: Make Gradle wrapper executable
+        run: chmod +x ./gradlew
+
+      - name: Build Debug APK
+        run: ./gradlew assembleDebug
+
+      - name: Verify Debug APK output
+        run: find app/build/outputs/apk -type f -name '*.apk' -print
+
+      - name: Upload QRium APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: QRium-debug
+          path: app/build/outputs/apk/**/*.apk
+          if-no-files-found: error
