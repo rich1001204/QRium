@@ -24,7 +24,7 @@ android {
     compileSdkVersion 33
 
     defaultConfig {
-        applicationId "com.rich1001204.qrium"
+        applicationId "org.qrium.yrq"
         minSdkVersion 23
         targetSdkVersion 33
         versionCode 17
@@ -70,7 +70,7 @@ android {
         viewBinding true
         dataBinding true
     }
-    namespace 'com.rich1001204.qrium'
+    namespace 'org.qrium.yrq'
 }
 
 dependencies {
