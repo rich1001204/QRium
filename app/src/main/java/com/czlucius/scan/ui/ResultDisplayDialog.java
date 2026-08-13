@@ -103,3 +103,14 @@ public class ResultDisplayDialog extends BottomSheetDialog {
         for (Action obj : code.getDataType().getActions()) {
             chip = (Chip) getLayoutInflater()
                     .inflate(R.layout.template_chip, binding.actionsGroup, false);
+            if (obj.getActionIcon() != null) {
+                chip.setChipIconResource(obj.getActionIcon());
+            }
+            chip.setText(obj.getActionText());
+            chip.setOnClickListener((v) -> {
+                obj.performAction(getContext(), code.getData());
+            });
+            binding.actionsGroup.addView(chip);
+        }
+    }
+}
