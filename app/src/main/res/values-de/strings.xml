@@ -27,12 +27,12 @@
     <string name="copy_sms_contents">SMS-Inhalt kopieren</string>
     <string name="view_location">Position in einer Karten-App sehen</string>
     <string name="onboarding_welcome">Willkommen</string>
-    <string name="promo_share_description">Code Scanner — Scanne und erstelle QR- und Barcodes.
+    <string name="promo_share_description">QRium — Scanne und erstelle QR- und Barcodes.
 \n%1$s</string>
     <string name="onboarding_scan_summary">Scanne und erstelle Codes von überall.</string>
     <string name="onboarding_create_summary">Erstelle QR-Codes und füge Farben hinzu.</string>
     <string name="onboarding_batch_summary">Scanne alle Codes die du möchtest und finde sie im Verlauf wieder.</string>
-    <string name="app_name">Code Scanner</string>
+    <string name="app_name">QRium</string>
     <string name="simple_description">Codes scannen und erstellen</string>
     <string name="open_source_view_or_contribute">Auf GitHub mitwirken. AGPLv3+.</string>
     <string name="intent1_name">Code scannen</string>
@@ -134,7 +134,7 @@
     <string name="no_model">Das QR/Barcode-Lesegerät ist nicht unterstützt.
 \nMicroG oder Google Play Dienst prüfen/aktualisieren und erneut versuchen.</string>
     <string name="enter_contents_here">Inhalt verfassen…</string>
-    <string name="onboarding_welcome_summary">Danke, dass du Code Scanner benutzt.
+    <string name="onboarding_welcome_summary">Danke, dass du QRium benutzt.
 \nAuf weiter klicken um mehr über diese App und ihre Funktionen zu erfahren.</string>
     <string name="privacy_policy_description">Bitte lese die Datenschutzerklärung, um zu erfahren, wie deine Daten verwenden werden. Vielen Dank.</string>
 </resources>

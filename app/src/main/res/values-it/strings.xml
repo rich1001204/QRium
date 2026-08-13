@@ -32,7 +32,7 @@
     <string name="title">Titolo di lavoro</string>
     <string name="text">Testo</string>
     <string name="to">A</string>
-    <string name="app_name">Scanner per codici</string>
+    <string name="app_name">QRium</string>
     <string name="simple_description">Scansione e creazione di codici</string>
     <string name="unknown">Sconosciuto</string>
     <string name="add_contact">Aggiungi contatto</string>
@@ -112,7 +112,7 @@
     <string name="last_name">Cognome</string>
     <string name="enter_url_here">Inserisci URL…</string>
     <string name="copy_password">Copia password</string>
-    <string name="onboarding_welcome_summary">Grazie per aver scelto Code Scanner.
+    <string name="onboarding_welcome_summary">Grazie per aver scelto QRium.
 \nProsegui per scoprire di più su quest\'app e le sue funzioni.</string>
     <string name="cancel">Annulla</string>
     <string name="copy_ssid">Copia nome rete Wi-Fi</string>

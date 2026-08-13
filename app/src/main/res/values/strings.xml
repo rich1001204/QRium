@@ -16,7 +16,7 @@
   ~ You should have received a copy of the GNU Affero General Public License
   ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   --><resources>
-    <string name="app_name">Code Scanner</string>
+    <string name="app_name">QRium</string>
     <string name="simple_description">Scan and create codes</string>
     <string name="source_code">Open Source</string>
     <string name="open_source_view_or_contribute">Contribute on GitHub. AGPLv3+.</string>
@@ -137,21 +137,21 @@
     <string name="view_location">View location in a map app</string>
     <string name="geolocation">Geolocation</string>
     <string name="onboarding_welcome">Welcome</string>
-    <string name="onboarding_welcome_summary">Thank you for using Code Scanner.\nClick next to learn more about the app and its features.</string>
+    <string name="onboarding_welcome_summary">Thank you for using QRium.\nClick next to learn more about the app and its features.</string>
     <string name="privacy_policy">Privacy Policy</string>
     <string name="intro">Introduction</string>
     <string name="privacy_policy_description">Please read the privacy policy below to learn how your data is handled. Thanks.</string>
     <string name="click_privacy_policy">View privacy policy</string>
     <string name="contact_email" translatable="false">czl.apps@icloud.com</string>
     <string name="share_with_others">Share this app with others.</string>
-    <string name="promo_share_description">Code Scanner — Scan and create QR and barcodes.\n%1$s</string>
+    <string name="promo_share_description">QRium — Scan and create QR and barcodes.\n%1$s</string>
     <string name="store_url">https://github.com/czlucius/code-scanner</string>
     <string name="next">Next</string>
     <string name="onboarding_scan_summary">Scan and create codes everywhere.</string>
     <string name="onboarding_history_summary">View history of previously scanned codes.</string>
     <string name="onboarding_create_summary">Create QR codes and apply colours.</string>
     <string name="onboarding_batch_summary">Scan all the codes you want, and find them in the history tab.</string>
-    <string name="wifi_control_error">You have to enable wifi control permission manually as you have denied it previously\n\nGo to (<b><i>Settings > Apps and notifications > Special App access > Wi-Fi Control > Code Scanner</i></b>)\n\nthen enable (<b><i>Allow app to control Wi-Fi</i></b>)\n\n\nIf you wish to add a wifi network manually, you can also do that</string>
+    <string name="wifi_control_error">You have to enable wifi control permission manually as you have denied it previously\n\nGo to (<b><i>Settings > Apps and notifications > Special App access > Wi-Fi Control > QRium</i></b>)\n\nthen enable (<b><i>Allow app to control Wi-Fi</i></b>)\n\n\nIf you wish to add a wifi network manually, you can also do that</string>
     <string name="open_settings">Open Settings</string>
     <string name="add_manually">Add Manually</string>
 </resources>

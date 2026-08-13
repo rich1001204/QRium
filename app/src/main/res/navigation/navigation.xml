@@ -25,7 +25,7 @@
 
     <fragment
         android:id="@+id/scannerFragment"
-        android:name="com.czlucius.scan.ui.ScannerFragment"
+        android:name="com.rich1001204.qrium.ui.ScannerFragment"
         android:label="@string/scan"
         tools:layout="@layout/fragment_scanner" >
         <action
@@ -34,19 +34,19 @@
     </fragment>
     <fragment
         android:id="@+id/historyFragment"
-        android:name="com.czlucius.scan.ui.HistoryFragment"
+        android:name="com.rich1001204.qrium.ui.HistoryFragment"
         android:label="@string/history"
         tools:layout="@layout/fragment_history" >
     </fragment>
     <fragment
         android:id="@+id/createFragment"
-        android:name="com.czlucius.scan.ui.CreateFragment"
+        android:name="com.rich1001204.qrium.ui.CreateFragment"
         android:label="@string/create"
         tools:layout="@layout/create" />
 
     <fragment
         android:id="@+id/preferencesFragment"
-        android:name="com.czlucius.scan.ui.PreferencesFragment"
+        android:name="com.rich1001204.qrium.ui.PreferencesFragment"
         android:label="PreferencesFragment" />
 
 </navigation>

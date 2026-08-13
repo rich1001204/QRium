@@ -2,7 +2,7 @@
 <resources>
     <string name="title">Cargo</string>
     <string name="text">Texto</string>
-    <string name="app_name">Leitor de código</string>
+    <string name="app_name">QRium</string>
     <string name="simple_description">Digitalize e crie códigos</string>
     <string name="description_permission">Permite a leitura de códigos (códigos de barras, códigos QR, etc.) com a câmera.</string>
     <string name="intent1_name">Digitalizar Código</string>

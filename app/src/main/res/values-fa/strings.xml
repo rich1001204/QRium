@@ -86,7 +86,7 @@
     <string name="onboarding_scan_summary">در همه جا رمزینه‌ها را پویش و ایجاد کنید.</string>
     <string name="onboarding_history_summary">تاریخچه رمزینه‌های پویش شده پیشین را مشاهده نمایید.</string>
     <string name="onboarding_batch_summary">همه رمزینه‌هایی را که می‌خواهید پویش کرده و آن‌ها را در زبانه تاریخچه بیابید.</string>
-    <string name="app_name">پویشگر رمزینه</string>
+    <string name="app_name">QRium</string>
     <string name="source_code">متن باز</string>
     <string name="enter_contents_here">محتواها را وارد نمایید…</string>
     <string name="no_cam">هیچ دوربینی یافت نشد</string>

@@ -24,7 +24,7 @@ android {
     compileSdkVersion 33
 
     defaultConfig {
-        applicationId "com.czlucius.scan"
+        applicationId "com.rich1001204.qrium"
         minSdkVersion 23
         targetSdkVersion 33
         versionCode 17
@@ -70,7 +70,7 @@ android {
         viewBinding true
         dataBinding true
     }
-    namespace 'com.czlucius.scan'
+    namespace 'com.rich1001204.qrium'
 }
 
 dependencies {

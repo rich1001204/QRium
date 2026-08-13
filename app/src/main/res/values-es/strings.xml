@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="source_code">Fuente abierta</string>
-    <string name="app_name">Escáner de códigos</string>
+    <string name="app_name">QRium</string>
     <string name="history">Historial</string>
     <string name="unknown">Desconocido</string>
     <string name="add_contact">Añadir Contacto</string>
@@ -92,7 +92,7 @@
     <string name="url">URL</string>
     <string name="phone_number">Número de teléfono</string>
     <string name="copy_phone_number">Copiar número de teléfono</string>
-    <string name="onboarding_welcome_summary">Gracias por usar Code Scanner.
+    <string name="onboarding_welcome_summary">Gracias por usar QRium.
 \nHaga clic en siguiente para obtener más información sobre la aplicación y sus características.</string>
     <string name="simple_description">Escanea y crea códigos</string>
     <string name="create">Crear</string>
