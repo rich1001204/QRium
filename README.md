@@ -18,7 +18,7 @@ This project is stable for release.
 Download it through these platforms (or share it with others):
 
 
-{{-  GitHub Releases: https://github.com/czlucius/code-scanner/releases (APK file for all devices)}}
+original repo{{-  GitHub Releases: https://github.com/czlucius/code-scanner/releases (APK file for all devices)}}
 
 
 You may also run this code on your machine by opening this project in Android Studio, and compiling it to your Android device.
