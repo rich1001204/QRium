@@ -1,66 +1,85 @@
-# code-scanner
-[![GitHub license](https://img.shields.io/github/license/czlucius/code-scanner)](https://github.com/czlucius/code-scanner/blob/main/LICENSE.txt)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/czlucius/code-scanner)](https://github.com/czlucius/code-scanner/releases)
-[![Lines of code](https://tokei.rs/b1/github/czlucius/code-scanner?category=code)](https://github.com/czlucius/code-scanner)
-[![Translation status](https://hosted.weblate.org/widgets/code-scanner/-/code-scanner-main/svg-badge.svg)](https://hosted.weblate.org/engage/code-scanner/)
-<img src="app/src/main/res/mipmap-xxxhdpi/ic_code_scanner.png" align="right"
-width="200"
-    hspace="10" vspace="1">
-<br>
-An Android app to scan and generate codes(barcodes/QR codes)  
-**🌟Star/watch this repo!🌟**
+# QRium
 
+QRium is an Android application for scanning and creating QR codes and barcodes.
 
+[![License](https://img.shields.io/github/license/rich1001204/QRium)](https://github.com/rich1001204/QRium/blob/main/LICENSE.txt)
+[![Build APK](https://github.com/rich1001204/QRium/actions/workflows/build-apk.yml/badge.svg)](https://github.com/rich1001204/QRium/actions/workflows/build-apk.yml)
+[![Latest release](https://img.shields.io/github/v/release/rich1001204/QRium)](https://github.com/rich1001204/QRium/releases)
 
-## Using this project
-This project is stable for release.  
+![QRium icon](app/src/main/res/mipmap-xxxhdpi/ic_code_scanner.png)
 
-Download it through these platforms (or share it with others):
+## Features
 
+QRium provides the following core features:
 
-original repo{{-  GitHub Releases: https://github.com/czlucius/code-scanner/releases (APK file for all devices)}}
+- Scan QR codes and barcodes with the device camera.
+- Scan codes from images.
+- Create QR codes with configurable content and colours.
+- Save and review scan history.
+- Open URL results automatically through the existing `URLAction` flow.
+- Choose between System Default, Material 3, AMOLED, and Cyber appearance themes.
+- Share generated codes and scan results.
 
+The application package is `org.qrium.yrq`, and the displayed application name is `QRium`.
 
-You may also run this code on your machine by opening this project in Android Studio, and compiling it to your Android device.
-Do note that this project is protected by the GNU Affero General Public License, hence usage of this project would have to be compliant to the GNU AGPL.
+## Download
+
+Download the latest Android APK from the [GitHub Releases](https://github.com/rich1001204/QRium/releases) page. GitHub Actions also publishes the Debug APKs as the `QRium-debug` artifact for successful builds.
+
+The project currently builds three Debug variants:
+
+```text
+app-foss-debug.apk
+app-general-debug.apk
+app-play-debug.apk
+```
+
+## Build locally
+
+Open the project in Android Studio, or run the Gradle wrapper from the repository root:
+
+```bash
+chmod +x ./gradlew
+./gradlew assembleDebug
+```
+
+The APK files are written below:
+
+```text
+app/build/outputs/apk/foss/debug/app-foss-debug.apk
+app/build/outputs/apk/general/debug/app-general-debug.apk
+app/build/outputs/apk/play/debug/app-play-debug.apk
+```
+
+The repository contains a GitHub Actions workflow at `.github/workflows/build-apk.yml`. It builds Debug APKs on Ubuntu with Java 17 and uploads them as the `QRium-debug` artifact.
+
+## Theme options
+
+QRium stores the selected appearance in the existing application preferences. The available options are:
+
+| Theme          | Behaviour                                                              |
+| -------------- | ---------------------------------------------------------------------- |
+| System Default | Follows the device light or dark mode.                                 |
+| Material 3     | Uses the existing Material 3 design system and palette.                |
+| AMOLED         | Uses a true black `#000000` background for dark surfaces.              |
+| Cyber          | Uses a dark blue-black surface with cyan, magenta, and purple accents. |
+
+## Development
+
+The Android namespace and application ID are both `org.qrium.yrq`. The project uses the existing Gradle and Android configuration in this repository; no additional setup is required beyond a compatible Android Studio installation or Android SDK environment.
+
+## AI-generated code disclosure
+
+Parts of QRium's source code and documentation were generated or refined with assistance from three AI systems: **GPT**, **Qwen**, and **Manus**. Their assistance covered code generation, package migration, debugging, documentation, UI/theme implementation, and build workflow preparation. Human review and repository-level validation remain necessary before production distribution.
+
+## Attribution and license
+
+QRium is based on the upstream [Code Scanner project](https://github.com/czlucius/code-scanner). Original copyright notices, license text, and required attribution remain in the source tree. Please review [LICENSE.txt](LICENSE.txt) before using or redistributing this software.
+
+QRium is distributed under the [GNU Affero General Public License version 3 or later](LICENSE.txt).
+
+The application also uses open-source libraries including ZXing, Material Components, AndroidX, Moshi, Room, CameraX, ACRA, Material Intro, ez-vCard, LeakCanary, and AndroidPhotoshopColorPicker. Their respective licenses and notices remain applicable.
 
 ## Contributing
-View [CONTRIBUTING.md](https://github.com/czlucius/code-scanner/blob/main/CONTRIBUTING.md) for more info.  
-This repo is participating in Hacktoberfest 2022, feel free to contribute!
 
-## Translations
-Feel free to contribute/translate this project!  
-Translations are done on [Weblate](https://weblate.org), translate the project here: https://hosted.weblate.org/engage/code-scanner/
-Thanks!  
-
-## License
-This project is licensed with the GNU Affero General Public License. View [the license file](LICENSE.txt) for more info.
-
-## Open-source dependencies
-
-This app uses the following open-source libraries:
-
-
--  ZXing: https://github.com/zxing/zxing - https://github.com/zxing/zxing/blob/master/LICENSE (Apache License 2.0)
--  ez-vcard: https://github.com/mangstadt/ez-vcard - https://github.com/mangstadt/ez-vcard/blob/master/LICENSE
--  LeakCanary(only in debug versions) - https://github.com/square/leakcanary - https://github.com/square/leakcanary/blob/main/LICENSE.txt (Apache License 2.0)
--  Moshi - https://github.com/square/moshi - https://github.com/square/moshi/blob/master/LICENSE.txt (Apache License 2.0)
--  AndroidPhotoshopColorPicker - https://github.com/aziztitu/AndroidPhotoshopColorPicker - https://github.com/aziztitu/AndroidPhotoshopColorPicker/blob/master/LICENSE (Artistic License 2.0)
--  Material Components - https://github.com/material-components/material-components-android - https://github.com/material-components/material-components-android/blob/master/LICENSE (Apache License 2.0)
--  ACRA - https://github.com/ACRA/acra/ (Apache License 2.0)
--  Material Intro - https://github.com/heinrichreimer/material-intro/ (MIT License)
-
-
-## Notes
-1.  Tag EXPM is used for experimental features.                       
-    Use Ctrl+Shift+F to perform project-wide search in Android Studio.
-2.  See foss branch for development for a build free of ML Kit, a proprietary Google library.
-3.  Crash reporting is optional.
-4.  For security vulnerabilities, send an email to czl.apps@icloud.com to arrange for encrypted communication before disclosing the vulnerability.
-
-Please feel free to file an issue if you notice any bugs while using the app.
-Pull Requests for current issues are also welcome.
-
-Thanks!
-    
-Hope you enjoy this app!
+Issues and pull requests are welcome in the [QRium repository](https://github.com/rich1001204/QRium). Please keep changes focused, preserve the upstream license and attribution, and verify the relevant Debug build before submitting a pull request.
