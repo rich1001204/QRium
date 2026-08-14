@@ -29,6 +29,7 @@ public class Settings {
     private static Settings INSTANCE;
 
     private static final String SHOULD_SHOW_ONBOARDING = "SHOULD_SHOW_ONBOARDING";
+    private static final String THEME = "THEME";
 
     private Settings(Context context) {
         this.globalPrefs = context.getApplicationContext().getSharedPreferences("APP_PREF_VALS", Context.MODE_PRIVATE);
@@ -49,6 +50,16 @@ public class Settings {
     public void setShouldShowOnboarding(boolean value) {
         globalPrefs.edit()
                 .putBoolean(SHOULD_SHOW_ONBOARDING, value)
+                .apply();
+    }
+
+    public String getTheme() {
+        return globalPrefs.getString(THEME, ThemeManager.SYSTEM);
+    }
+
+    public void setTheme(String value) {
+        globalPrefs.edit()
+                .putString(THEME, value)
                 .apply();
     }
 

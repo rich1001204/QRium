@@ -70,6 +70,66 @@
     </style>
 
 
+    <style name="Theme.App.Material3" parent="Theme.App">
+        <!-- Material 3 follows the system light/dark resource variant. -->
+    </style>
+
+    <style name="Theme.App.Amoled" parent="Theme.Material3.Dark">
+        <item name="android:windowBackground">@color/pure_black</item>
+        <item name="android:colorBackground">@color/pure_black</item>
+        <item name="colorBackground">@color/pure_black</item>
+        <item name="colorSurface">@color/pure_black</item>
+        <item name="colorSurfaceVariant">@color/amoled_surface_variant</item>
+        <item name="colorOnBackground">@color/amoled_on_surface</item>
+        <item name="colorOnSurface">@color/amoled_on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/amoled_on_surface</item>
+        <item name="colorOutline">@color/amoled_outline</item>
+        <item name="colorPrimary">@color/md_theme_dark_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_dark_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/md_theme_dark_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/md_theme_dark_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/md_theme_dark_secondary</item>
+        <item name="colorOnSecondary">@color/md_theme_dark_onSecondaryContainer</item>
+        <item name="colorSecondaryContainer">@color/md_theme_dark_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/md_theme_dark_onSecondaryContainer</item>
+        <item name="android:statusBarColor">@color/pure_black</item>
+        <item name="android:navigationBarColor">@color/pure_black</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+
+    <style name="Theme.App.Cyber" parent="Theme.Material3.Dark">
+        <item name="android:windowBackground">@color/cyber_background</item>
+        <item name="android:colorBackground">@color/cyber_background</item>
+        <item name="colorBackground">@color/cyber_background</item>
+        <item name="colorSurface">@color/cyber_surface</item>
+        <item name="colorSurfaceVariant">@color/cyber_surface_variant</item>
+        <item name="colorOnBackground">@color/cyber_on_surface</item>
+        <item name="colorOnSurface">@color/cyber_on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/cyber_on_surface_variant</item>
+        <item name="colorOutline">@color/cyber_outline</item>
+        <item name="colorPrimary">@color/cyber_primary</item>
+        <item name="colorOnPrimary">@color/cyber_on_primary</item>
+        <item name="colorPrimaryContainer">@color/cyber_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/cyber_on_primary_container</item>
+        <item name="colorSecondary">@color/cyber_secondary</item>
+        <item name="colorOnSecondary">@color/cyber_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/cyber_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/cyber_on_secondary_container</item>
+        <item name="colorTertiary">@color/cyber_tertiary</item>
+        <item name="colorOnTertiary">@color/cyber_on_tertiary</item>
+        <item name="colorTertiaryContainer">@color/cyber_tertiary_container</item>
+        <item name="colorOnTertiaryContainer">@color/cyber_on_tertiary_container</item>
+        <item name="colorError">@color/cyber_error</item>
+        <item name="colorErrorContainer">@color/cyber_error_container</item>
+        <item name="colorOnError">@color/cyber_on_error</item>
+        <item name="colorOnErrorContainer">@color/cyber_on_error_container</item>
+        <item name="android:statusBarColor">@color/cyber_background</item>
+        <item name="android:navigationBarColor">@color/cyber_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+
     <style name="ThemeOverlay.App.BottomNavigationView" parent="">
         <item name="colorPrimary">@color/pure_black</item>
     </style>

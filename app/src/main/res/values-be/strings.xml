@@ -126,7 +126,7 @@
     <string name="click_privacy_policy">Праглядзець палітыку прыватнасці</string>
     <string name="share_with_others">Падзяліцеся гэтай праграмай з іншымі.</string>
     <string name="promo_share_description">Сканер кодаў — сканіруйце і стварайце QR-коды і штрых-коды.\n%1$s</string>
-    <string name="store_url">https://github.com/czlucius/code-scanner</string>
+    <string name="store_url">https://github.com/rich1001204/QRium</string>
     <string name="next">Далей</string>
     <string name="onboarding_scan_summary">Сканіруйце і стварайце коды ўсюды.</string>
     <string name="onboarding_history_summary">Прагляд гісторыі раней адсканіраваных кодаў.</string>

@@ -31,6 +31,7 @@ import androidx.navigation.ui.NavigationUI;
 import org.qrium.yrq.R;
 import org.qrium.yrq.databinding.ActivityMainBinding;
 import org.qrium.yrq.preferences.Settings;
+import org.qrium.yrq.preferences.ThemeManager;
 
 /**
  * NOTE:
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        ThemeManager.apply(this);
         super.onCreate(savedInstanceState);
         org.qrium.yrq.databinding.ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());

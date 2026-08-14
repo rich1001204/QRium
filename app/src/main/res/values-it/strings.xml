@@ -8,7 +8,7 @@
     <string name="onboarding_history_summary">Visualizzazione della cronologia dei codici precedentemente scansionati.</string>
     <string name="onboarding_welcome">Benvenuto</string>
     <string name="privacy_policy">Informativa sulla privacy</string>
-    <string name="store_url">https://github.com/czlucius/code-scanner</string>
+    <string name="store_url">https://github.com/rich1001204/QRium</string>
     <string name="onboarding_scan_summary">Scansiona e crea codici ovunque.</string>
     <string name="intent2_name">Crea codice dai dati</string>
     <string name="open_url">Apri URL</string>

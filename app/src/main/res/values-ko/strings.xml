@@ -121,7 +121,7 @@
     <string name="share_with_others">다른 사람들과 앱을 공유하세요.</string>
     <string name="onboarding_scan_summary">어디서든 코드를 스캔하고 생성하세요.</string>
     <string name="onboarding_create_summary">QR코드를 생성하고 색상을 입혀보세요.</string>
-    <string name="store_url">https://github.com/czlucius/code-scanner</string>
+    <string name="store_url">https://github.com/rich1001204/QRium</string>
     <string name="open_source_view_or_contribute">GitHub에서 기여하세요. AGPLv3+.</string>
     <string name="history">내역</string>
     <string name="create">생성</string>

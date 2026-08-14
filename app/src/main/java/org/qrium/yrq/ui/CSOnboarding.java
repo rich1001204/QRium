@@ -30,6 +30,7 @@ import androidx.viewpager.widget.ViewPager;
 import org.qrium.yrq.R;
 import org.qrium.yrq.Utils;
 import org.qrium.yrq.preferences.Settings;
+import org.qrium.yrq.preferences.ThemeManager;
 import com.heinrichreimersoftware.materialintro.app.IntroActivity;
 import com.heinrichreimersoftware.materialintro.slide.SimpleSlide;
 
@@ -40,6 +41,7 @@ public class CSOnboarding extends IntroActivity {
 
     @Override
     public void onCreate(@Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
+        ThemeManager.apply(this);
         super.onCreate(savedInstanceState);
 
         //Checking if dark mode is active to set the value of background in black

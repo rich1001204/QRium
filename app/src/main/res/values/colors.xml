@@ -100,4 +100,31 @@
     <color name="md_theme_dark_shadow">#000000</color>
     <color name="md_theme_dark_surfaceTint">#b0b0b0</color>
     <color name="md_theme_dark_surfaceTintColor">#b0b0b0</color>
+
+    <color name="amoled_on_surface">#F5F5F5</color>
+    <color name="amoled_surface_variant">#121212</color>
+    <color name="amoled_outline">#8A8A8A</color>
+
+    <color name="cyber_background">#050A14</color>
+    <color name="cyber_surface">#0B1220</color>
+    <color name="cyber_surface_variant">#142238</color>
+    <color name="cyber_primary">#66E8FF</color>
+    <color name="cyber_on_primary">#001014</color>
+    <color name="cyber_primary_container">#123B52</color>
+    <color name="cyber_on_primary_container">#B8F4FF</color>
+    <color name="cyber_secondary">#FF4FAD</color>
+    <color name="cyber_on_secondary">#250019</color>
+    <color name="cyber_secondary_container">#5A1747</color>
+    <color name="cyber_on_secondary_container">#FFD9EF</color>
+    <color name="cyber_tertiary">#8B7CFF</color>
+    <color name="cyber_on_tertiary">#100B2C</color>
+    <color name="cyber_tertiary_container">#30256E</color>
+    <color name="cyber_on_tertiary_container">#E4DEFF</color>
+    <color name="cyber_on_surface">#E5F5FF</color>
+    <color name="cyber_on_surface_variant">#B8C9D9</color>
+    <color name="cyber_outline">#6D8AA3</color>
+    <color name="cyber_error">#FFB4AB</color>
+    <color name="cyber_error_container">#93000A</color>
+    <color name="cyber_on_error">#690005</color>
+    <color name="cyber_on_error_container">#FFDAD6</color>
 </resources>

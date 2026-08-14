@@ -95,7 +95,7 @@
     <string name="promo_share_description">QRium - Сканируйте и создавайте коды
 \nУстановите сейчас бесплатно!
 \n%1$s</string>
-    <string name="store_url">https://github.com/czlucius/code-scanner</string>
+    <string name="store_url">https://github.com/rich1001204/QRium</string>
     <string name="next">Далее</string>
     <string name="onboarding_scan_summary">Сканируйте поддерживаемые коды в любое время и в любом месте.</string>
     <string name="onboarding_history_summary">Просмотр истории ранее отсканированных кодов.</string>

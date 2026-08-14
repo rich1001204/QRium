@@ -126,7 +126,7 @@
     <string name="share_with_others">Bagikan aplikasi ini dengan orang lain.</string>
     <string name="promo_share_description">Pemindai Kode — Memindai dan membuat QR dan barcode.
 \n%1$s</string>
-    <string name="store_url">https://github.com/czlucius/code-scanner</string>
+    <string name="store_url">https://github.com/rich1001204/QRium</string>
     <string name="onboarding_history_summary">Lihat riwayat kode yang dipindai sebelumnya.</string>
     <string name="onboarding_create_summary">Buat kode QR dan terapkan warna.</string>
     <string name="open_source_licenses">Lisensi sumber terbuka</string>

@@ -133,7 +133,7 @@
     <string name="prefix">Prefijo</string>
     <string name="country">País</string>
     <string name="call_number">Número de llamada</string>
-    <string name="store_url">https://github.com/czlucius/code-scanner</string>
+    <string name="store_url">https://github.com/rich1001204/QRium</string>
     <string name="onboarding_create_summary">Crea códigos QR y aplica colores.</string>
     <string name="open_source_view_or_contribute">Contribuye en Github. AGPLv3+.</string>
     <string name="description_permission">Permitir escanear códigos (códigos de barras, QR, etc.) con la cámara.</string>

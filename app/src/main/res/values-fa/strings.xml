@@ -123,7 +123,7 @@
 \nسعی کنید از یک دوربین خارجی برای افزودن این قابلیت به دستگاه خود استفاده کنید.</string>
     <string name="simple_description">پویش و ایجاد رمزینه‌ها</string>
     <string name="intro">معرفی</string>
-    <string name="store_url">https://github.com/czlucius/code-scanner</string>
+    <string name="store_url">https://github.com/rich1001204/QRium</string>
     <string name="onboarding_create_summary">رمزینه‌های QR را ایجاد کرده و رنگ‌ها را اعمال نمایید.</string>
     <string name="intent1_name">پویش رمزینه</string>
     <string name="description_permission">پویش رمزینه‌ها (رمزخطی‌ها، رمزینه‌های QR و غیره) را با دوربین مجاز نمایید.</string>

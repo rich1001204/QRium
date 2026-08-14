@@ -34,11 +34,13 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 
 import org.qrium.yrq.R;
 import org.qrium.yrq.Utils;
+import org.qrium.yrq.preferences.Settings;
 import org.qrium.yrq.callbacks.ManualResetPreferenceClickListener;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
@@ -54,6 +56,19 @@ public class PreferencesFragment extends PreferenceFragmentCompat {
 
         // Instantiate ads if on play flavour.
         View v = super.onCreateView(inflater, container, savedInstanceState);
+
+        ListPreference themePreference = findPreference("theme_preference");
+        if (themePreference != null) {
+            themePreference.setValue(Settings.getInstance(requireContext()).getTheme());
+            themePreference.setSummaryProvider(ListPreference.SimpleSummaryProvider.getInstance());
+            themePreference.setOnPreferenceChangeListener((preference, newValue) -> {
+                if (newValue instanceof String) {
+                    Settings.getInstance(requireContext()).setTheme((String) newValue);
+                    requireActivity().recreate();
+                }
+                return true;
+            });
+        }
 
         Preference oss_link = findPreference("open_source");
         if (oss_link != null) {
