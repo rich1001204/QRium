@@ -77,7 +77,6 @@
     <style name="Theme.App.Amoled" parent="Theme.Material3.Dark">
         <item name="android:windowBackground">@color/pure_black</item>
         <item name="android:colorBackground">@color/pure_black</item>
-        <item name="colorBackground">@color/pure_black</item>
         <item name="colorSurface">@color/pure_black</item>
         <item name="colorSurfaceVariant">@color/amoled_surface_variant</item>
         <item name="colorOnBackground">@color/amoled_on_surface</item>
@@ -101,7 +100,6 @@
     <style name="Theme.App.Cyber" parent="Theme.Material3.Dark">
         <item name="android:windowBackground">@color/cyber_background</item>
         <item name="android:colorBackground">@color/cyber_background</item>
-        <item name="colorBackground">@color/cyber_background</item>
         <item name="colorSurface">@color/cyber_surface</item>
         <item name="colorSurfaceVariant">@color/cyber_surface_variant</item>
         <item name="colorOnBackground">@color/cyber_on_surface</item>
